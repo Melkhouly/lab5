@@ -1,9 +1,8 @@
-Exercise1: 
+Exercise1:
 
-Create an Express Application to show table of invesotrs table by requesting the route : /invesotrs. 
-
-invesotrs table as follows:
-[
+Create an Express Application that will accept a route /Inventors and display a table of inventors (using any template engine of your choice ) USE JSON data from file (inventors.json)
+Your application should run behind a proxy without revealing the framework names to clients
+your router should be case sensitive and strict
   {
     "first": "Albert",
     "last": "Einstein",
@@ -39,5 +38,5 @@ invesotrs table as follows:
     "last": "Planck",
     "year": 1858
   }
-  
+
 ]

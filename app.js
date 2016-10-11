@@ -10,9 +10,9 @@ const path=require("path");
 
 app.get("/inventors", function(request, response){
 
-    const invstPath = path.join(__dirname,'/inventors.json');
+    const invPath = path.join(__dirname,'/inventors.json');
 
-    const inventors = JSON.parse(fs.readFileSync(invstPath, 'utf8'));
+    const inventors = JSON.parse(fs.readFileSync(invPath, 'utf8'));
     response.render(__dirname+'/home.ejs', {title:'Inventors', inventors:inventors});
 });
 
